@@ -1,0 +1,81 @@
+body{
+    background-image: url("https://i0.wp.com/media.boingboing.net/wp-content/uploads/2018/05/cool-background1.png?w=1192&ssl=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* copyed button class/values from online google search. */
+h1 {
+    text-align:center;
+}
+
+p.center {
+    text-align:center;
+}
+
+div.center{
+    text-align:center;
+}
+
+a.btn,.btn {
+    margin-right: 1em; /* remove this while use*/
+    margin-bottom: 1em; /* remove this while use*/
+      display: inline-block;
+      outline: none;
+      *zoom: 1;
+      text-align: center;
+      text-decoration: none;
+      font-family: inherit;
+      font-weight: 300;
+      letter-spacing: 1px;
+      vertical-align: middle;
+      border: 1px solid;
+      transition: all 0.2s ease;
+      box-sizing: border-box;
+      text-shadow: 0 1px 0 rgba(0,0,0,0.01);
+  }
+
+.btn-medium {
+    font-size: 0.9375em;
+    padding: 0.5375em 1.375em;
+}
+.btn-medium {
+    font-size: 0.9375em;
+    padding: 0.5375em 1.375em;
+}
+
+.btn-radius {
+    border-radius: 3px;
+}
+
+
+  /* css grid set up */
+
+.grid-container {
+    width: 100vw;
+    height: 100vh;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-areas: 
+    'logo navbar'
+    'header header'
+    'infop neatimg';
+}
+
+.logo {
+    text-align: left;
+    grid-area: logo;
+}
+.navbar {
+    text-align: right;
+    grid-area: navbar;
+}
+.header
+{ grid-area: header; }
+
+.infop {
+    grid-area: infop;
+}
+.neatimg {
+    grid-area: neatimg;
+}
+
