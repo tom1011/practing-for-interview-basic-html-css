@@ -1,0 +1,67 @@
+/* css padding/etc now acconts in dimentions I put */
+* {
+    box-sizing: border-box;
+  }
+
+  /* for each coloumn item. */
+  /* this is desktop  */
+  [class*="item"] {
+    float: left;
+    padding: 5px;
+  }
+
+  /* play around with dimentions until it looks nice */
+  /* desktop */
+  .item1{ width: 20% ;
+    text-align: center}
+  .item2 { width: 40%;
+     text-align: center}
+  .item3 { width: auto;
+      text-align: center}
+  .item4 { width: 0%}
+
+
+
+/* making the menu look nice. */
+
+.menu li{
+  padding: 8px;
+  margin: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+    background-color: #0099cc;
+  }
+
+.aside {
+    justify-self: center;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+
+}
+
+.pageTitle {
+    background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+
+@media (max-width: 800px){
+    .item2 { width:75% }
+    .item3 {width: 100%;
+        text-align: center}
+}
+
+
+/* mobile device setting. this is last so it always gose last this is cheep and quick */
+@media (max-width: 650px) {
+    [class*="item"]{
+        width: 100%;
+      }
+  }
